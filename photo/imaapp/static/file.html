@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>THALAPATHY</h1>
+    </header>
+    <div class="gallery">
+        <div class="gallery-item" onclick="openModal(this)">
+            <img src="vijay1" height="200px" width="350px">
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+            <img src="vijay2"  height="200px" width="350px" >
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+            <img src="vijay3" height="200px" width="350px" >
+        </div>
+        <div class="gallery-item" onclick="openModal(this)">
+            <img src="Screenshot 2025-05-07 105121.png" height="200px" width="350px" >
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+</html>
